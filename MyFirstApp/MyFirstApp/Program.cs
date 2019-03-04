@@ -11,7 +11,7 @@ namespace MyFirstApp
         static void Main(string[] args)
         {
 
-            Fruit1[] myFruit = new Fruit1[5];
+            var myFruit = new List<Fruit1>();
             string neve;
             string szarmazasihelye;
             int mennyisege;
@@ -31,9 +31,11 @@ namespace MyFirstApp
 
 
 
-                myFruit[i] = new Fruit1(neve, szarmazasihelye,mennyisege);
+                myFruit.Add(new Fruit1(neve, szarmazasihelye,mennyisege));
                
             }
+            
+
             Console.ReadKey();
 
             
