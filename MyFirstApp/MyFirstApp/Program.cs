@@ -16,6 +16,7 @@ namespace MyFirstApp
             string szarmazasihelye;
             int mennyisege;
             int gyszam;
+            int osszmenny = 0;
 
             Console.Write("Kérem a gyümölcsök számát:");
             gyszam = int.Parse(Console.ReadLine());
@@ -29,13 +30,13 @@ namespace MyFirstApp
                 Console.Write("Kérem a(z) {0}. Gyümölcs mennyiségét:", i + 1);
                 mennyisege = int.Parse(Console.ReadLine());
 
-
+                osszmenny += mennyisege; 
 
                 myFruit.Add(new Fruit1(neve, szarmazasihelye,mennyisege));
                
             }
-            
 
+            Console.WriteLine("Gyümölcsök összes mennyisége:" + osszmenny);
             Console.ReadKey();
 
             

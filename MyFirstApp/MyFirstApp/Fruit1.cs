@@ -18,6 +18,7 @@ namespace MyFirstApp
             neve = aNev;
             szarmazasihelye = aSzhelye;
             mennyisege = aMenny;
+            Console.WriteLine("DEBUG: Fruit() konstruktor meghívása");
         }
     }
 }
