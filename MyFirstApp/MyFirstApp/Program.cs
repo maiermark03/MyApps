@@ -10,12 +10,33 @@ namespace MyFirstApp
     {
         static void Main(string[] args)
         {
-            // The code provided will print ‘Hello World’ to the console.
-            // Press Ctrl+F5 (or go to Debug > Start Without Debugging) to run your app.
-            Console.WriteLine("Hello World!");
+
+            Fruit1[] myFruit = new Fruit1[5];
+            string neve;
+            string szarmazasihelye;
+            int mennyisege;
+            int gyszam;
+
+            Console.Write("Kérem a gyümölcsök számát:");
+            gyszam = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < gyszam; i++)
+            {
+                Console.Write("Kérem a(z) {0}. Gyümölcs nevét:", i + 1);
+                neve = Console.ReadLine();
+                Console.Write("Kérem a(z) {0}. Gyümölcs származásihelyét:", i + 1);
+                szarmazasihelye = Console.ReadLine();
+                Console.Write("Kérem a(z) {0}. Gyümölcs mennyiségét:", i + 1);
+                mennyisege = int.Parse(Console.ReadLine());
+
+
+
+                myFruit[i] = new Fruit1(neve, szarmazasihelye,mennyisege);
+               
+            }
             Console.ReadKey();
 
-            // Go to http://aka.ms/dotnet-get-started-console to continue learning how to build a console app! 
+            
         }
     }
 }
