@@ -10,6 +10,7 @@ namespace kpo
     {
         static void Main(string[] args)
         {
+            Random r = new Random();
             ///
             /// Program: Kő papír olló játék leprogramozása
             /// Írta: maier márk.
@@ -34,6 +35,7 @@ namespace kpo
             {
                 ///Feladat 3:
                 ///Player választásnak megkérdezése és tárolása.
+                ///
 
                 Console.WriteLine("Válasz a Kő/ Papír/ Olló Közül:");
                 
@@ -47,6 +49,21 @@ namespace kpo
                         break;
                     case 'o':
                         playerChoice = "Olló";
+                        break;
+                }
+                ///Feladat 4: 
+                ///Számítógép választásának kérdése random().
+                ///
+                switch (r.Next(0, 3))
+                {
+                    case 0:
+                        compChoice = "Kő";
+                        break;
+                    case 1:
+                        compChoice = "Papír";
+                        break;
+                    case 2:
+                        compChoice = "Olló";
                         break;
                 }
                 
