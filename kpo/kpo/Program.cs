@@ -16,13 +16,19 @@ namespace kpo
             /// Írta: maier márk.
             /// Adott: számítógép  véletlenszerűen választ k/p/o
             /// Játékos billentyűzeten választ
+            /// 
+
 
 
             ///Megoldandó feledat 1:
             ///Ciklus programfutás amíg a felhasználó szeretne játszani.
+            ///
+
             bool moreGame = true;
             
             /// Feledat 2:Változók létrehozása.
+            /// 
+
             string compChoice = "";
             string playerChoice = "";
 
@@ -66,11 +72,37 @@ namespace kpo
                         compChoice = "Olló";
                         break;
                 }
-                
-                
+                ///Feladat 6: 
+                ///Értékeljük ki a játékot.
+                ///
+                if (
+                    (playerChoice == "Kő" && compChoice == "Papír") ||
+                    (playerChoice == "Papír" && compChoice == "Olló") ||
+                    (playerChoice == "Olló" && compChoice == "Kő")
+                   )
+                {
+                    Console.WriteLine("Számítógép :" + compChoice + "Te:" + playerChoice);
+                    Console.WriteLine("Veszítetél! Állás: Szg: {0} Játékos: {1}", ++compScore, playerChoice);
+                        
+                }
+                else if (playerChoice == compChoice)
+                {
+                    Console.WriteLine("Számítógép :" + compChoice + "Te:" + playerChoice);
+                    Console.WriteLine("Veszítetél! Állás: Szg: {0} Játékos: {1}", compScore, playerChoice);
 
-                
-                    Console.Write("Akarsz még játszani? i/n");
+                }
+                else
+                {
+                    Console.WriteLine("Számítógép :" + compChoice + "Te:" + playerChoice);
+                    Console.WriteLine("Veszítetél! Állás: Szg: {0} Játékos: {1}", compChoice, ++playerScore);
+
+                }
+
+
+
+
+
+                Console.Write("Akarsz még játszani? i/n");
                 if (Console.ReadKey(true).KeyChar == 'n')
                 {
                     moreGame = false;
