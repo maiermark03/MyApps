@@ -16,3 +16,7 @@ public Fruit(string aNev, string aSzhelye, int aMenny)
 
 
 # számoljuk meg a felvitt gyümölcsök mennyiségét.
+
+
+### ismétlés
+osztály létrehozás egy adattagal
