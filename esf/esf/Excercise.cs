@@ -8,6 +8,7 @@ namespace esf
 {
     class Excercise
     {
+        int v = 0;
         /// <summary>
         /// Public :nyilvános elérés.
         /// </summary>
@@ -28,6 +29,8 @@ namespace esf
         {
             return Name;
         }
+      ///ciklusok
       
+           
     }
 }
