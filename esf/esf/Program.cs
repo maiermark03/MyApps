@@ -11,6 +11,7 @@ namespace esf
         static void Main(string[] args)
         {
             int v = 0;
+            string  s;
             //A létrhozot új tipussal inicilizáljunk egy objektumot.
             Excercise ex = new Excercise("Maier Márk");
 
@@ -68,7 +69,9 @@ namespace esf
                     Console.WriteLine("Switch default:" + v);
                     break;
             }
-
+            s = Console.ReadLine();
+            Console.WriteLine("Ez egy szöveg:");
+             
             Console.ReadKey();
 
             
