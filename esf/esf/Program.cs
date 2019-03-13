@@ -16,6 +16,10 @@ namespace esf
             //ex.Name = "Maier Márk";
 
             Console.WriteLine(ex.Name);
+            //tagfügvény
+            ex.printName();
+
+            Console.WriteLine(ex.getName());
              
             Console.ReadKey();
 

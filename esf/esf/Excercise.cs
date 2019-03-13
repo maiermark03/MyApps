@@ -14,11 +14,20 @@ namespace esf
         ///Adattagok létrehozása: public ,private ,preotectod
         public string Name;
 
-        //Konstruktor
-        public Excercise(string aName);
+        //Konstruktor : inicilizálja az osztály adatjait
+        public Excercise(string aName)
         {
            Name = aName;
         } 
+        //tagfügvény 
+        public void printName()
+        {
+            Console.WriteLine(Name);
+        }
+        public string getName()
+        {
+            return Name;
+        }
       
     }
 }
