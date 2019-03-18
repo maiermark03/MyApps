@@ -48,7 +48,7 @@ namespace kpo
                 switch (Console.ReadKey(true).KeyChar)
                 {
                     case 'k':
-                        playerChoice = "kő";
+                        playerChoice = "Kő";
                         break;
                     case 'p':
                         playerChoice = "Papír";
@@ -81,20 +81,20 @@ namespace kpo
                     (playerChoice == "Olló" && compChoice == "Kő")
                    )
                 {
-                    Console.WriteLine("Számítógép :" + compChoice + "Te:" + playerChoice);
-                    Console.WriteLine("Veszítetél! Állás: Szg: {0} Játékos: {1}", ++compScore, playerChoice);
+                    Console.WriteLine("Számítógép :" + compChoice + " Te:" + playerChoice);
+                    Console.WriteLine("Veszítetél! Állás: Szg: {0} Játékos: {1}", ++compScore, playerScore);
                         
                 }
                 else if (playerChoice == compChoice)
                 {
-                    Console.WriteLine("Számítógép :" + compChoice + "Te:" + playerChoice);
-                    Console.WriteLine("Veszítetél! Állás: Szg: {0} Játékos: {1}", compScore, playerChoice);
+                    Console.WriteLine("Számítógép :" + compChoice + " Te:" + playerChoice);
+                    Console.WriteLine("Döntetlen! Állás: Szg: {0} Játékos: {1}", compScore, playerChoice);
 
                 }
                 else
                 {
-                    Console.WriteLine("Számítógép :" + compChoice + "Te:" + playerChoice);
-                    Console.WriteLine("Veszítetél! Állás: Szg: {0} Játékos: {1}", compChoice, ++playerScore);
+                    Console.WriteLine("Számítógép :" + compChoice + " Te:" + playerChoice);
+                    Console.WriteLine("Nyertél! Állás: Szg: {0} Játékos: {1}", compScore, ++playerScore);
 
                 }
 
