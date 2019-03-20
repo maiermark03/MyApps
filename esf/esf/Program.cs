@@ -65,13 +65,29 @@ namespace esf
                     Console.WriteLine("Switch:" + v);
                     break;
                 
-                    default:
+                default:
                     Console.WriteLine("Switch default:" + v);
                     break;
             }
             s = Console.ReadLine();
             Console.WriteLine("Ez egy szöveg:");
-             
+
+            //Egy billentyű leütése
+            //Console.ReadKey(true).KeyChar
+            //integerré konvertálni a console számot(string)
+            //int.Parse(Console.WriteLine())
+
+            //Tömbök
+            //Létrehoztunk egy int tipusútömbötaminek a neve szamok.
+            int[] szamok = new int[5];
+            string[] szoveg = new string[10];
+
+            //Tömb inicializálás
+            int[] iNums = new int[] { 1, 2, 3, 4, 5, 6 };
+            string[] sFruit = new string[] {"Alma","Körte","Eper","Banán"};
+            Console.WriteLine("iNums első eleme: {0} sFruit első eleme: {1}", iNums[0], sFruit[0]);
+            Console.WriteLine("iNums első eleme:"+ iNums[0] + "sFruit első eleme:" +sFruit[0]);
+
             Console.ReadKey();
 
             
