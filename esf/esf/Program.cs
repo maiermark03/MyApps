@@ -150,7 +150,7 @@ namespace esf
                         Lista.Remove(Lista.Find(x => x.Name.Contains(Name)));
                         break;
                     case 'l':
-                        Console.WriteLine("KÖnyvtár tartalom:");
+                        Console.WriteLine("Könyvtár tartalom:");
                         
                         foreach (Book book in Lista)
                         {
