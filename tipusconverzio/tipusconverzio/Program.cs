@@ -23,8 +23,12 @@ namespace tipusconverzio
             Console.WriteLine(cc == null ? "NULL" : cc); // Null
 
             int x = 10;
-            Console.WriteLine(x == 5 ? "x == 5" : "x != 5");
+            Console.Write(x == 5 ? "x == 5" : "x != 5");
 
+            for (char ch = 'a'; ch <= 'z'; ch++)
+            {
+                Console.Write(ch + "->" +(int)ch+ ' ');
+            }
             Console.ReadKey();
         }
     }
